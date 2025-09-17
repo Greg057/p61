@@ -1,3 +1,5 @@
+"use client";
+
 import type { Technology } from "../../types/supabase-types"
 import { TechLogo } from "../ui/tech-logo"
 import { hasTechnologyLogo } from "../../utils/devicon-mapping"

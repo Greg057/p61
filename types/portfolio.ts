@@ -59,12 +59,26 @@ export interface PortfolioComponents {
 
 /**
  * Portfolio display props interface
- * 
+ *
  * Used by PortfolioDisplay component to receive data and component references
  */
 export interface PortfolioDisplayProps extends BasePortfolioData {
   /** Component references for dynamic portfolio rendering */
   selectedComponents: PortfolioComponents
+  /** Layout type for education section */
+  educationLayoutType?: 'card' | 'timeline' | 'list'
+  /** Layout type for work experience section */
+  workLayoutType?: 'card' | 'timeline' | 'list'
+  /** Layout type for user info section */
+  userInfoLayoutType?: 'userInfo1' | 'userInfo2' | 'userInfo3' | 'userInfo4'
+  /** Layout type for projects section */
+  projectsLayoutType?: 'projects1' | 'projects3'
+  /** Layout type for skills section */
+  skillsLayoutType?: 'skills1' | 'skills3' | 'skillsCarousel'
+  /** CV preview URL for immediate portfolio updates */
+  cvPreviewUrl?: string | null
+  /** CV preview filename for immediate portfolio updates */
+  cvPreviewFileName?: string | null
 }
 
 /**

@@ -1,3 +1,5 @@
+"use client";
+
 import { Project } from '../../types/supabase-types';
 import { Badge } from '../ui/badge';
 import { Button } from '../ui/button';
